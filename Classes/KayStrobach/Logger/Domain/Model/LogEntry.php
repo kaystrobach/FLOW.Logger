@@ -15,6 +15,12 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class LogEntry {
 	/**
+	 * @Flow\Inject
+	 * @var \TYPO3\Flow\Security\Authentication\AuthenticationManagerInterface
+	 */
+	protected $authenticationManager;
+
+	/**
 	 * @var string $id
 	 *
 	 * @ORM\Id
@@ -69,7 +75,7 @@ class LogEntry {
 	 *
 	 * @ORM\Column(length=255, nullable=true)
 	 */
-	protected $username;
+	protected $username = NULL;
 
 	/**
 	 * @return string
@@ -182,7 +188,10 @@ class LogEntry {
 	/**
 	 * @param string $username
 	 */
-	public function setUsername($username) {
+	public function setUsername($username = NULL) {
 		$this->username = $username;
+		if($this->authenticationManager->getSecurityContext()->getAccount()) {
+			$this->username = $this->authenticationManager->getSecurityContext()->getAccount()->getAccountIdentifier();
+		}
 	}
 }
