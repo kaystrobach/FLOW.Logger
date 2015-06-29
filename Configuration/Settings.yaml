@@ -9,3 +9,7 @@ TYPO3:
       excludeClasses:
         'Behat.*': ['.*']
         'gedmo.*': ['.*']
+    persistence:
+      doctrine:
+        eventSubscribers:
+          - 'Gedmo\Loggable\LoggableListener'
