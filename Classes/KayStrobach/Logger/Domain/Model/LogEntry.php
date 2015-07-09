@@ -190,7 +190,8 @@ class LogEntry {
 	 */
 	public function setUsername($username = NULL) {
 		$this->username = $username;
-		if($this->authenticationManager->getSecurityContext()->getAccount()) {
+		$securityContext = $this->authenticationManager->getSecurityContext();
+		if ($securityContext->isInitialized() && $securityContext->getAccount()) {
 			$this->username = $this->authenticationManager->getSecurityContext()->getAccount()->getAccountIdentifier();
 		}
 	}
