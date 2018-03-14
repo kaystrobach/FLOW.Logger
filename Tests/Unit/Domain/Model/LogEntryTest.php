@@ -9,7 +9,7 @@ namespace KayStrobach\Logger\Tests\Unit\Domain\Model;
 /**
  * Testcase for Log entry
  */
-class LogEntryTest extends \TYPO3\Flow\Tests\UnitTestCase {
+class LogEntryTest extends \Neos\Flow\Tests\UnitTestCase {
 
 	/**
 	 * @test

@@ -1,15 +1,13 @@
-TYPO3:
+
+Neos:
   Flow:
     object:
-      # Exclude classes from object management (Reflection and Configuration building).
-      # Sequence of package keys (a * as wildcard as last character is allowed) each
-      # with a sequence of regular expressions.
-      # Each regular expression will be tested against the list of fully qualified
-      # class names in the package and classes will be excluded if matching.
       excludeClasses:
-        'Behat.*': ['.*']
-        'gedmo.*': ['.*']
+        'Behat.*':
+          - '.*'
+        'gedmo.*':
+          - '.*'
     persistence:
       doctrine:
         eventSubscribers:
-          - 'Gedmo\Loggable\LoggableListener'
+          - Gedmo\Loggable\LoggableListener
