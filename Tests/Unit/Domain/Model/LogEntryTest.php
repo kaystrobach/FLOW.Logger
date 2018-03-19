@@ -2,14 +2,14 @@
 namespace KayStrobach\Logger\Tests\Unit\Domain\Model;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "KayStrobach.Logger".    *
+ * This script belongs to the Neos Flow package "KayStrobach.Logger".    *
  *                                                                        *
  *                                                                        */
 
 /**
  * Testcase for Log entry
  */
-class LogEntryTest extends \TYPO3\Flow\Tests\UnitTestCase {
+class LogEntryTest extends \Neos\Flow\Tests\UnitTestCase {
 
 	/**
 	 * @test

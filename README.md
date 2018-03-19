@@ -1,7 +1,7 @@
 FLOW.Logger
 ===========
 
-uses doctrine/loggable to log changes to TYPO3.Flow domain objects
+uses doctrine/loggable to log changes to Neos.Flow domain objects
 
 How to
 ======

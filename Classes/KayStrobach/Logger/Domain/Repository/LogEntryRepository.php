@@ -2,12 +2,12 @@
 namespace KayStrobach\Logger\Domain\Repository;
 
 /*                                                                        *
- * This script belongs to the TYPO3 Flow package "KayStrobach.Logger".    *
+ * This script belongs to the Neos Flow package "KayStrobach.Logger".    *
  *                                                                        *
  *                                                                        */
 
-use TYPO3\Flow\Annotations as Flow;
-use TYPO3\Flow\Persistence\Repository;
+use Neos\Flow\Annotations as Flow;
+use Neos\Flow\Persistence\Repository;
 
 /**
  * @Flow\Scope("singleton")
