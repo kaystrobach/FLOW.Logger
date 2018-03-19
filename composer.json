@@ -1,9 +1,10 @@
 {
     "name": "kaystrobach/logger",
-    "type": "typo3-flow-package",
+    "type": "neos-flow-package",
     "description": "log changes to domain objects",
     "require": {
         "gedmo/doctrine-extensions": "2.3.x"
+        "neos/flow": "*"
     },
     "autoload": {
         "psr-0": {
