@@ -3,7 +3,7 @@
     "type": "neos-flow-package",
     "description": "log changes to domain objects",
     "require": {
-        "gedmo/doctrine-extensions": "2.3.x"
+        "gedmo/doctrine-extensions": "2.3.x",
         "neos/flow": "*"
     },
     "autoload": {
