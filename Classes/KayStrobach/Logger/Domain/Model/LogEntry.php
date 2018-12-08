@@ -7,7 +7,7 @@ namespace KayStrobach\Logger\Domain\Model;
  *                                                                        */
 
 use Doctrine\Tests\ORM\Functional\UUIDGeneratorTest;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -16,7 +16,7 @@ use Doctrine\ORM\Mapping as ORM;
 class LogEntry {
 	/**
 	 * @Flow\Inject
-	 * @var \TYPO3\Flow\Security\Authentication\AuthenticationManagerInterface
+	 * @var \Neos\Flow\Security\Authentication\AuthenticationManagerInterface
 	 */
 	protected $authenticationManager;
 
