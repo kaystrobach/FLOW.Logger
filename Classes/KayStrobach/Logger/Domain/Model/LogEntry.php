@@ -12,6 +12,12 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @Flow\Entity
+ * @ORM\Table(
+ *   name="kaystrobach_logger_domain_model_logentry",
+ *   indexes={
+ *     @ORM\Index(name="idx_logentry_obj_cls_ver", columns={"object_id", "object_class", "version"})
+ *   }
+ * )
  */
 class LogEntry {
 	/**
